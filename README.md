@@ -39,8 +39,14 @@ npm i tar
 ``` 
 //Si tienes este error "npm WARN deprecated tar@2.2.2: This version of tar is no longer supported, and will not receive security updates."
 
-Si deseas cerrar el db.json -> **Ctrl + C** <br/>
-IMPORTANTE: Mantener la terminal corriendo para la correcta ejecución de la app.
+``` console
+Ctrl + C 
+``` 
+//Si deseas culminar el servidor react.
+
+<br/>
+
+**IMPORTANTE: Mantener la terminal corriendo para la correcta ejecución de la app.**
 
 ## 💻 Contacto
 * Linkedin => [Clic aquí](https://www.linkedin.com/in/k3yjey-dev/)
