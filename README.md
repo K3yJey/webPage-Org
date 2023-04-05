@@ -23,13 +23,19 @@ npx create-react-app [nombre de la app]
 ``` 
 //Crear nuestra app de React
 
-* ``` cd [nombre de la app] ``` <br/>
+``` console 
+cd [nombre de la app] 
+``` 
 //Para ingresar a la carpeta a trabajar con la app
 
-* ``` npm start ``` <br/>
+``` console
+npm start 
+```
 //Iniciar con el servidor
 
-* ``` npm i tar ``` <br/>
+``` 
+npm i tar 
+``` 
 //Si tienes este error "npm WARN deprecated tar@2.2.2: This version of tar is no longer supported, and will not receive security updates."
 
 Si deseas cerrar el db.json -> **Ctrl + C** <br/>
