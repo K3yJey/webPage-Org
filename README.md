@@ -15,7 +15,8 @@ Carpeta contenedora del curso "React - Desarrollando con JavaScript",
 Proyecto en progreso.
 
 ## 📂 División/Organización de la carpeta
-* Carpeta 
+* Carpeta node_modules: 
+* Carpeta org: 
 
 ## ⚙️ Comandos necesarios
 ``` console 
