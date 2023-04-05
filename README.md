@@ -18,11 +18,9 @@ Proyecto en progreso.
 * Carpeta 
 
 ## ⚙️ Comandos necesarios
-* 
 ``` console 
 npx create-react-app [nombre de la app]
 ``` 
-<br/>
 //Crear nuestra app de React
 
 * ``` cd [nombre de la app] ``` <br/>
