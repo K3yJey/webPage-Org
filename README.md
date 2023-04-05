@@ -9,7 +9,7 @@ Carpeta contenedora del curso "React - Desarrollando con JavaScript",
 * ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 * ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 * ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-* ![React](https://img.shields.io/badge/react-%2523E34F26.svg?style=for-the-badge&logo=react&logoColor=white)
+* ![React](https://img.shields.io/badge/react-%231572B6.svg?style=for-the-badge&logo=react&logoColor=white)
 
 ## 📌 Comentarios adicionales 
 Proyecto en progreso.
@@ -18,7 +18,8 @@ Proyecto en progreso.
 * Carpeta 
 
 ## ⚙️ Comandos necesarios
-* ``` npx create-react-app [nombre de la app] ``` <br/>
+* js
+``` npx create-react-app [nombre de la app] ``` <br/>
 //Crear nuestra app de React
 
 * ``` cd [nombre de la app] ``` <br/>
