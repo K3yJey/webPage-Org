@@ -1,6 +1,6 @@
 # React - Desarrollando con JavaScript
 
-## Sobre el repositorio
+## 📦 Sobre el repositorio
 Carpeta contenedora del curso "React - Desarrollando con JavaScript", 
 
 ## ✔️ [El respositorio aquí](https://github.com/K3yJey/javascript-CRUD_JSAsincrono.git)
@@ -22,31 +22,34 @@ Proyecto en progreso.
 ``` console 
 npx create-react-app [nombre de la app]
 ``` 
-//Crear nuestra app de React
+↑ Crear nuestra app de React
 
 ``` console 
 cd [nombre de la app] 
 ``` 
-//Para ingresar a la carpeta a trabajar con la app
+↑ Para ingresar a la carpeta a trabajar con la app
 
 ``` console
 npm start 
 ```
-//Iniciar con el servidor
+↑ Iniciar con el servidor
 
 ``` console
 npm i tar 
 ``` 
-//Si tienes este error "npm WARN deprecated tar@2.2.2: This version of tar is no longer supported, and will not receive security updates."
+↑ Si tienes este error "npm WARN deprecated tar@2.2.2: This version of tar is no longer supported, and will not receive security updates."
 
 ``` console
 Ctrl + C 
 ``` 
-//Si deseas culminar el servidor react.
+↑ Si deseas culminar el servidor react.
 
 <br/>
 
 **IMPORTANTE: Mantener la terminal corriendo para la correcta ejecución de la app.**
+
+## 🎨 Diseño en Figma
+* Figma => [Clic aquí](https://www.figma.com/file/70l45ssEH6qBo9IYDe2nxe/Intro-a-React?node-id=134%3A128&t=7I0a4d3jWOfv6dHU-1)
 
 ## 💻 Contacto
 * Linkedin => [Clic aquí](https://www.linkedin.com/in/k3yjey-dev/)

@@ -1,0 +1,24 @@
+.card-form {
+  font-family: var(--texto-montserrat);
+  margin: 24px 0px;
+}
+
+.card-form label {
+  font-family: var(--montserrat);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-negro);
+  display: block;
+}
+
+.card-form input {
+  font-family: var(--montserrat);
+  font-size: 16px;
+  background-color: var(--color-blanco);
+  width: 100%;
+  box-shadow: 10px 10px 30px  rgb(0, 0, 0, 0.1);
+  border: none;
+  padding: 30px 20px;
+  outline-color: var(--color-azul);
+  margin: 8px 0px;
+}

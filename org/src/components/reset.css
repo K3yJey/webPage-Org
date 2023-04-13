@@ -1,0 +1,26 @@
+:root {
+  --titulo-prata: "Prata", serif;
+  --texto-montserrat: "Montserrat", sans-serif;
+
+  --color-fuente: #212121;
+  --color-azul: #6278f7;
+  --color-azul-turquesa: #95ffd4;
+  --color-blanco-medio: #f2f2f2;
+  --color-blanco: #ffffff;
+  --color-negro: #212121;
+
+  --fondo-programacion: #d9f7e9;
+  --destaque-programacion: #57c278;
+  --fondo-front_end: #e8f8ff;
+  --destaque-front_end: #82cffa;
+  --fondo-data_science: #f0f8e2;
+  --destaque-data_science: #a6d157;
+  --fondo-dev_ops: #fde7e8;
+  --destaque-dev_ops: #e06b69;
+  --fondo-ux_diseño: #fae9f5;
+  --destaque-ux_diseño: #db6ebf;
+  --fondo-movil: #fff5d9;
+  --destaque-movil: #ffba05;
+  --fondo-innovacion_gestion: #ffeedf;
+  --destaque-innovacion_gestion: #ff8a29;
+}
