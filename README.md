@@ -37,7 +37,7 @@ npm start
 ``` console
 npm i tar 
 ``` 
-↑ Si tienes este error "npm WARN deprecated tar@2.2.2: This version of tar is no longer supported, and will not receive security updates."
+↑ Si tienes este error: "npm WARN deprecated tar@2.2.2: This version of tar is no longer supported, and will not receive security updates."
 
 ``` console
 Ctrl + C 
