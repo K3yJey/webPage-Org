@@ -1,0 +1,15 @@
+.boton {
+  font-family: var(--texto-montserrat);
+  font-weight: 700;
+  background-color: var(--color-azul);
+  color: var(--color-blanco);
+  border: none;
+  border-radius: 10px;
+  padding: 24px 32px;
+  margin: 32px 0px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  color: var(--color-hover);
+}
