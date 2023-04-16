@@ -1,7 +1,7 @@
 # React - Desarrollando con JavaScript
 
 ## 📦 Sobre el repositorio
-Carpeta contenedora del curso "React - Desarrollando con JavaScript", 
+Primer proyecto de la librería React, en el cual desarrollamos un app estilo orgnización en la cual podremos controlar los colaboradores de nuestra Organización.
 
 ## ✔️ [El respositorio aquí](https://github.com/K3yJey/javascript-CRUD_JSAsincrono.git)
 
@@ -15,8 +15,8 @@ Carpeta contenedora del curso "React - Desarrollando con JavaScript",
 Proyecto en progreso.
 
 ## 📂 División/Organización de la carpeta
-* Carpeta node_modules: 
-* Carpeta org: 
+* Carpeta 
+* Carpeta 
 
 ## ⚙️ Comandos necesarios
 ``` console 
