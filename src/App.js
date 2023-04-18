@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header/Header.js";
 import Form from "./components/Form/Form";
 import Org from "./components/Org/Org";
+import Equipo from "./components/Equipo/Equipo";
 
 function App() {
   const [mostrar, ocultar] = useState(true);
@@ -18,7 +19,10 @@ function App() {
       <Header />
       {/*mostrar ? <Form /> : <></>*/}
       {mostrar && <Form />}
+
       <Org mostrarForm={mostrarForm} />
+
+      <Equipo />
     </div>
   );
 }
