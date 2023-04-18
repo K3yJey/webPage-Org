@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# React - Desarrollando con JavaScript
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📦 Sobre el repositorio
+Primer proyecto de la librería React, en el cual desarrollamos un app estilo orgnización en la cual podremos controlar los colaboradores de nuestra Organización.
 
-## Available Scripts
+## ✔️ [El respositorio aquí](https://github.com/K3yJey/javascript-CRUD_JSAsincrono.git)
 
-In the project directory, you can run:
+## 🔧 Tecnologías utilizadas
+* ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+* ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+* ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+* ![React](https://img.shields.io/badge/React-100000?style=for-the-badge&logo=React&logoColor=00dafc&labelColor=222222&color=222222)
 
-### `npm start`
+## 📌 Comentarios adicionales 
+Proyecto en progreso.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📂 División/Organización de la carpeta
+* Carpeta 
+* Carpeta 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ⚙️ Comandos necesarios
+``` console 
+npx create-react-app [nombre de la app]
+``` 
+↑ Crear nuestra app de React
 
-### `npm test`
+``` console 
+cd [nombre de la app] 
+``` 
+↑ Para ingresar a la carpeta a trabajar con la app
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+``` console
+npm start 
+```
+↑ Iniciar con el servidor. [http://localhost:3000](http://localhost:3000) para ver la página en tu navegador
 
-### `npm run build`
+``` console
+npm i tar 
+``` 
+↑ Si tienes este error: "npm WARN deprecated tar@2.2.2: This version of tar is no longer supported, and will not receive security updates."
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+``` console
+Ctrl + C 
+``` 
+↑ Si deseas culminar el servidor react.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br/>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**IMPORTANTE: Mantener la terminal corriendo para la correcta ejecución de la app.**
 
-### `npm run eject`
+## 🎨 Diseño en Figma
+* Figma => [Clic aquí](https://www.figma.com/file/70l45ssEH6qBo9IYDe2nxe/Intro-a-React?node-id=134%3A128&t=7I0a4d3jWOfv6dHU-1)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 💻 Contacto
+* Linkedin => [Clic aquí](https://www.linkedin.com/in/k3yjey-dev/)
