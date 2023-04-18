@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./Form.css";
-import CardForm from "./CardForm/CardForm.js";
-import CardListaForm from "./CardListaForm/CardListaForm.js";
-import BotonCrear from "./BotonCrear/BotonCrear.js";
+import InputForm from "./InputForm/InputForm.jsx";
+import ListaForm from "./ListaForm/ListaForm.jsx";
+import BotonCrear from "./BotonCrear/BotonCrear.jsx";
 
 const Form = () => {
   const [nombre, setNombre] = useState("");
@@ -27,28 +27,28 @@ const Form = () => {
     <section className="formulario">
       <form onSubmit={envioDatos}>
         <h2>Rellena el formulario para crear el colaborador.</h2>
-        <CardForm
+        <InputForm
           titulo="Nombre"
           placeholder="Ingresar nombre"
           valor={nombre}
           set={setNombre}
           required
         />
-        <CardForm
+        <InputForm
           titulo="Puesto"
           placeholder="Ingresar puesto"
           valor={puesto}
           set={setPuesto}
           required
         />
-        <CardForm
+        <InputForm
           titulo="Foto"
           placeholder="Ingresar enlace de foto"
           valor={foto}
           set={setFoto}
           required
         />
-        <CardListaForm valor={equipo} set={setEquipo} required />
+        <ListaForm valor={equipo} set={setEquipo} required />
         <BotonCrear texto="Crear" />
       </form>
     </section>

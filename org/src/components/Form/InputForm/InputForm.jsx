@@ -1,6 +1,6 @@
-import "./CardForm.css";
+import "./InputForm.css";
 
-const CardForm = (props) => {
+const InputForm = (props) => {
   const cambio = (event) => {
     props.set(event.target.value);
   };
@@ -18,4 +18,4 @@ const CardForm = (props) => {
   );
 };
 
-export default CardForm;
+export default InputForm;

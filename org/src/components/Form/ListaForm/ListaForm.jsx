@@ -1,6 +1,6 @@
-import "./CardListaForm.css";
+import "./ListaForm.css";
 
-const CardListaForm = (props) => {
+const ListaForm = (props) => {
   const listaEquipo = [
     "Programación",
     "Front End",
@@ -34,4 +34,4 @@ const CardListaForm = (props) => {
   );
 };
 
-export default CardListaForm;
+export default ListaForm;
