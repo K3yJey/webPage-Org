@@ -1,27 +1,27 @@
-import { useState } from "react";
-import "./Form.css";
-import InputForm from "./InputForm/InputForm.jsx";
-import ListaForm from "./ListaForm/ListaForm.jsx";
-import BotonCrear from "./BotonCrear/BotonCrear.jsx";
+import { useState } from "react"
+import "./Form.css"
+import InputForm from "./InputForm/InputForm.jsx"
+import ListaForm from "./ListaForm/ListaForm.jsx"
+import BotonCrear from "./BotonCrear/BotonCrear.jsx"
 
-const Form = () => {
-  const [nombre, setNombre] = useState("");
-  const [puesto, setPuesto] = useState("");
-  const [foto, setFoto] = useState("");
+const Form = (props) => {
+  const [nombre, setNombre] = useState("")
+  const [puesto, setPuesto] = useState("")
+  const [foto, setFoto] = useState("")
 
-  const [equipo, setEquipo] = useState("");
+  const [equipo, setEquipo] = useState("")
 
   const envioDatos = (event) => {
-    event.preventDefault();
+    event.preventDefault()
 
     let datosCard = {
       nombre,
       puesto,
       foto,
       equipo
-    };
-    console.log(datosCard);
-  };
+    }
+    console.log(datosCard)
+  }
 
   return (
     <section className="formulario">
@@ -48,11 +48,11 @@ const Form = () => {
           set={setFoto}
           required
         />
-        <ListaForm valor={equipo} set={setEquipo} required />
+        <ListaForm valor={equipo} set={setEquipo} equipo={props.equipo} required />
         <BotonCrear texto="Crear" />
       </form>
     </section>
-  );
-};
+  )
+}
 
-export default Form;
+export default Form

@@ -1,0 +1,44 @@
+.colaborador {
+  width: 280px;
+  margin-bottom: 24px;
+  padding: 0px 20px;
+}
+
+.colaborador .encabezado {
+  background-color: var(--color-azul);
+  border-radius: 10px 10px 0 0;
+}
+
+.colaborador img {
+  position: relative;
+  width: 100px;
+  border-radius: 50%;
+  bottom: -50px;
+}
+
+.colaborador .info {
+  font-family: var(--texto-montserrat);
+  background: var(--color-blanco);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 0 0 10px 10px;
+  padding-top: 90px;
+  padding-bottom: 40px;
+  min-height: 100px;
+}
+
+.colaborador .info h4 {
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--color-azul);
+  line-height: 22px;
+  margin-bottom: 8px;
+}
+
+.colaborador .info h5 {
+  color: var(--color-fuente);
+  font-size: 18px;
+  padding: 0 24px;
+  line-height: 22px;
+  font-weight: 400;
+  margin: 0px;
+}

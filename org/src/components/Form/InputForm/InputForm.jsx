@@ -1,10 +1,9 @@
-import "./InputForm.css";
+import "./InputForm.css"
 
 const InputForm = (props) => {
   const cambio = (event) => {
-    props.set(event.target.value);
-  };
-
+    props.set(event.target.value)
+  }
   return (
     <div className="card-form">
       <label>{props.titulo}</label>
@@ -15,7 +14,7 @@ const InputForm = (props) => {
         onChange={cambio}
       />
     </div>
-  );
-};
+  )
+}
 
-export default InputForm;
+export default InputForm

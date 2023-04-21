@@ -1,19 +1,9 @@
-import "./ListaForm.css";
+import "./ListaForm.css"
 
 const ListaForm = (props) => {
-  const listaEquipo = [
-    "Programación",
-    "Front End",
-    "Data Science",
-    "Devops",
-    "UX y Diseño",
-    "Móvil",
-    "Innovación y Gestión"
-  ];
-
   const cambio = (event) => {
-    props.set(event.target.value);
-  };
+    props.set(event.target.value)
+  }
 
   return (
     <div className="card-list-form">
@@ -22,16 +12,14 @@ const ListaForm = (props) => {
         <option value="" defaultValue="" disabled hidden>
           Selecciona un equipo
         </option>
-        {listaEquipo.map((equipo, i) => {
-          return (
-            <option key={i} value={equipo}>
-              {equipo}
-            </option>
-          );
-        })}
+        {props.equipo.map((lista, i) => (
+          <option key={i} value={lista}>
+            {lista}
+          </option>
+        ))}
       </select>
     </div>
-  );
-};
+  )
+}
 
-export default ListaForm;
+export default ListaForm

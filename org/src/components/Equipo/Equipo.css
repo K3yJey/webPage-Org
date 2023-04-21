@@ -1,0 +1,26 @@
+.equipo {
+  /*background-color: var(--fondo-);*/
+  font-size: 32px;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.equipo h3 {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--color-fuente);
+  padding-bottom: 14px;
+  border-bottom: 4px solid;
+}
+
+.colaboradores {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

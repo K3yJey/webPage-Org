@@ -1,10 +1,27 @@
 import "./Equipo.css"
+import Colaborador from "../Colaborador/Colaborador.jsx"
 
-const Equipo = () => {
-    return <section className="equipo">
-        <h3 className="titulo">Título</h3>
-        <div className="colaboradores"></div>
+const Equipo = (props) => {
+  //Destructuración
+  const { fondo, destaque, titulo } = props.equipo
+
+  const bgc = {
+    backgroundColor: fondo
+  }
+
+  const color = {
+    borderColor: destaque
+  }
+
+  return (
+    <section className="equipo" style={bgc}>
+      <h3 style={color}>{titulo}</h3>
+      <div className="colaboradores">
+        <Colaborador />
+        <Colaborador />
+      </div>
     </section>
+  )
 }
 
-export default Equipo;
+export default Equipo
