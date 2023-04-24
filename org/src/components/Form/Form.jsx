@@ -8,8 +8,9 @@ const Form = (props) => {
   const [nombre, setNombre] = useState("")
   const [puesto, setPuesto] = useState("")
   const [foto, setFoto] = useState("")
-
   const [equipo, setEquipo] = useState("")
+
+  const { registrarColaborador } = props
 
   const envioDatos = (event) => {
     event.preventDefault()
@@ -20,6 +21,7 @@ const Form = (props) => {
       foto,
       equipo
     }
+    registrarColaborador(datosCard)
     console.log(datosCard)
   }
 

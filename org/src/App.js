@@ -6,14 +6,6 @@ import Org from "./components/Org/Org.jsx"
 import Equipo from "./components/Equipo/Equipo.jsx"
 
 function App() {
-  const [mostrar, ocultar] = useState(false)
-
-  //Ternario -> condicion ? Muestra : NoMuestra
-  //Cortocircuito -> condicion && Muestra
-  const mostrarForm = () => {
-    ocultar(!mostrar)
-  }
-
   //Lista de equipos
   const listaEquipo = [
     {
@@ -53,17 +45,47 @@ function App() {
     }
   ]
 
+  const [mostrarForm, ocultarForm] = useState(false)
+  const [colaboradores, actualizarColab] = useState([])
+
+  //Ternario -> condicion ? Muestra : NoMuestra
+  //Cortocircuito -> condicion && Muestra
+  const mostrarFormulario = () => {
+    ocultarForm(!mostrarForm)
+  }
+
+  //Registrar colaborador
+  const registrarColaborador = (colaborador) => {
+    console.log("Nuevo colaborador", colaborador)
+
+    //Spread operator -> Copia el arreglo
+    actualizarColab([...colaboradores, colaborador])
+  }
+
   return (
     <div>
       <Header />
 
-      {/*mostrar ? <Form /> : <></>*/}
-      {mostrar && <Form equipo={listaEquipo.map((lista) => lista.titulo)} />}
+      {/*mostrarForm ? <Form /> : <></>*/}
+      {mostrarForm && (
+        <Form
+          equipo={listaEquipo.map((lista) => lista.titulo)}
+          registrarColaborador={registrarColaborador}
+        />
+      )}
 
-      <Org mostrarForm={mostrarForm} />
+      <Org mostrarForm={mostrarFormulario} />
 
       {listaEquipo.map((lista) => {
-        return <Equipo key={lista.titulo} equipo={lista} />
+        return (
+          <Equipo
+            key={lista.titulo}
+            equipo={lista}
+            colaborador={colaboradores.filter(
+              (colaborador) => colaborador.equipo === lista.titulo
+            )}
+          />
+        )
       })}
     </div>
   )
