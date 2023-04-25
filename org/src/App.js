@@ -4,8 +4,19 @@ import Header from "./components/Header/Header.jsx"
 import Form from "./components/Form/Form.jsx"
 import Org from "./components/Org/Org.jsx"
 import Equipo from "./components/Equipo/Equipo.jsx"
+import Footer from "./components/Footer/Footer.jsx"
 
 function App() {
+  const [mostrarForm, ocultarForm] = useState(false)
+  const [colaboradores, actualizarColab] = useState([
+    {
+      equipo: "Front End",
+      foto: "https://github.com/K3yJey.png",
+      nombre: "Kevin Madrid",
+      puesto: "Developer"
+    }
+  ])
+
   //Lista de equipos
   const listaEquipo = [
     {
@@ -44,9 +55,6 @@ function App() {
       destaque: "var(--destaque-innovacion_gestion)"
     }
   ]
-
-  const [mostrarForm, ocultarForm] = useState(false)
-  const [colaboradores, actualizarColab] = useState([])
 
   //Ternario -> condicion ? Muestra : NoMuestra
   //Cortocircuito -> condicion && Muestra
@@ -87,6 +95,8 @@ function App() {
           />
         )
       })}
+
+      <Footer />
     </div>
   )
 }
