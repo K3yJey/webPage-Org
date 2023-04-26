@@ -14,6 +14,12 @@ function App() {
       foto: "https://github.com/K3yJey.png",
       nombre: "Kevin Madrid",
       puesto: "Developer"
+    },
+    {
+      equipo: "Programación",
+      foto: "https://github.com/lpachecob.png",
+      nombre: "Luis Pacheco",
+      puesto: "Developer"
     }
   ])
 
@@ -70,6 +76,11 @@ function App() {
     actualizarColab([...colaboradores, colaborador])
   }
 
+  //Eliminar colaborador
+  const eliminarColaborador = () => {
+    console.log("Eliminar")
+  }
+
   return (
     <div>
       <Header />
@@ -91,7 +102,10 @@ function App() {
             equipo={lista}
             colaborador={colaboradores.filter(
               (colaborador) => colaborador.equipo === lista.titulo
+              /*Filter -> Filtrar de colaborador para que solo aparezcan los
+              lista.titulo que sea igual al de colaborador*/
             )}
+            eliminarColaborador={eliminarColaborador}
           />
         )
       })}

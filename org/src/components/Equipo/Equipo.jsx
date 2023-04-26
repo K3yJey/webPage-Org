@@ -1,10 +1,10 @@
 import "./Equipo.css"
-import Colaborador from "../Colaborador/Colaborador.jsx"
+import Colaborador from "./Colaborador/Colaborador.jsx"
 
 const Equipo = (props) => {
   //Destructuración
   const { fondo, destaque, titulo } = props.equipo
-  const { colaborador } = props
+  const { colaborador, eliminarColaborador } = props
 
   const bgc = {
     backgroundColor: fondo
@@ -22,7 +22,14 @@ const Equipo = (props) => {
 
           <div className="colaboradores">
             {colaborador.map((colaborador, i) => {
-              return <Colaborador key={i} datos={colaborador} destaque={destaque} />
+              return (
+                <Colaborador
+                  key={i}
+                  datos={colaborador}
+                  destaque={destaque}
+                  eliminarColaborador={eliminarColaborador}
+                />
+              )
             })}
           </div>
         </section>
