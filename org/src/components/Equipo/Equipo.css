@@ -1,22 +1,32 @@
 .equipo {
   /*background-color: var(--fondo-);*/
-  font-size: 32px;
-  font-weight: 400;
+  position: relative;
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-size: 32px;
+  font-weight: 400;
   width: 100%;
   padding: 32px;
   box-sizing: border-box;
 }
 
-.equipo h3 {
+.input-color {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.titulo {
   display: inline-block;
+  justify-content: center;
   font-size: 40px;
   font-weight: 400;
   color: var(--color-fuente);
   padding-bottom: 14px;
   border-bottom: 4px solid;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .colaboradores {

@@ -22,48 +22,44 @@ function App() {
       puesto: "Developer"
     }
   ])
-
-  //Lista de equipos
-  const listaEquipo = [
+  const [equipo, actualizarEquipo] = useState([
     {
       titulo: "Programación",
-      fondo: "var(--fondo-programacion)",
-      destaque: "var(--destaque-programacion)"
+      fondo: "#d9f7e9",
+      destaque: "#57c278"
     },
     {
       titulo: "Front End",
-      fondo: "var(--fondo-front_end)",
-      destaque: "var(--destaque-front_end)"
+      fondo: "#e8f8ff",
+      destaque: "#82cffa"
     },
     {
       titulo: "Data Science",
-      fondo: "var(--fondo-data_science)",
-      destaque: "var(--destaque-data_science)"
+      fondo: "#f0f8e2",
+      destaque: "#a6d157"
     },
     {
       titulo: "Devops",
-      fondo: "var(--fondo-dev_ops)",
-      destaque: "var(--destaque-dev_ops)"
+      fondo: "#fde7e8",
+      destaque: "#e06b69"
     },
     {
       titulo: "UX y Diseño",
-      fondo: "var(--fondo-ux_diseño)",
-      destaque: "var(--destaque-ux_diseño)"
+      fondo: "#fae9f5",
+      destaque: "#db6ebf"
     },
     {
       titulo: "Móvil",
-      fondo: "var(--fondo-movil)",
-      destaque: "var(--destaque-movil)"
+      fondo: "#fff5d9",
+      destaque: "#ffba05"
     },
     {
       titulo: "Innovación y Gestión",
-      fondo: "var(--fondo-innovacion_gestion)",
-      destaque: "var(--destaque-innovacion_gestion)"
+      fondo: "#ffeedf",
+      destaque: "#ff8a29"
     }
-  ]
+  ])
 
-  //Ternario -> condicion ? Muestra : NoMuestra
-  //Cortocircuito -> condicion && Muestra
   const mostrarFormulario = () => {
     ocultarForm(!mostrarForm)
   }
@@ -81,6 +77,20 @@ function App() {
     console.log("Eliminar")
   }
 
+  //Actualizar color de equipo
+  const actualizarColor = (color, titulo) => {
+    console.log("Actualizar: ", color, titulo)
+    const colorActualizar = equipo.map((equipo) => {
+      if (equipo.titulo === titulo) {
+        equipo.destaque = color
+      }
+      return equipo
+    })
+    actualizarEquipo(colorActualizar)
+  }
+
+  //Ternario -> condicion ? Muestra : NoMuestra
+  //Cortocircuito -> condicion && Muestra
   return (
     <div>
       <Header />
@@ -88,14 +98,14 @@ function App() {
       {/*mostrarForm ? <Form /> : <></>*/}
       {mostrarForm && (
         <Form
-          equipo={listaEquipo.map((lista) => lista.titulo)}
+          equipo={equipo.map((lista) => lista.titulo)}
           registrarColaborador={registrarColaborador}
         />
       )}
 
       <Org mostrarForm={mostrarFormulario} />
 
-      {listaEquipo.map((lista) => {
+      {equipo.map((lista) => {
         return (
           <Equipo
             key={lista.titulo}
@@ -106,6 +116,7 @@ function App() {
               lista.titulo que sea igual al de colaborador*/
             )}
             eliminarColaborador={eliminarColaborador}
+            actualizarColor={actualizarColor}
           />
         )
       })}

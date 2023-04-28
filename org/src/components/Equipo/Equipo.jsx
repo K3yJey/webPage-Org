@@ -3,8 +3,8 @@ import Colaborador from "./Colaborador/Colaborador.jsx"
 
 const Equipo = (props) => {
   //Destructuración
-  const { fondo, destaque, titulo } = props.equipo
-  const { colaborador, eliminarColaborador } = props
+  const { titulo, fondo, destaque } = props.equipo
+  const { colaborador, eliminarColaborador, actualizarColor } = props
 
   const bgc = {
     backgroundColor: fondo
@@ -18,7 +18,17 @@ const Equipo = (props) => {
     <>
       {colaborador.length > 0 && (
         <section className="equipo" style={bgc}>
-          <h3 style={color}>{titulo}</h3>
+          <h3 className="titulo" style={color}>
+            {titulo}
+          </h3>
+          <input
+            className="input-color"
+            type="color"
+            value={destaque}
+            onChange={(evento) => {
+              actualizarColor(evento.target.value, titulo)
+            }}
+          />
 
           <div className="colaboradores">
             {colaborador.map((colaborador, i) => {
@@ -28,6 +38,7 @@ const Equipo = (props) => {
                   datos={colaborador}
                   destaque={destaque}
                   eliminarColaborador={eliminarColaborador}
+                  actualizarColor={actualizarColor}
                 />
               )
             })}
