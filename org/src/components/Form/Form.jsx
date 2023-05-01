@@ -9,26 +9,37 @@ const Form = (props) => {
   const [puesto, setPuesto] = useState("")
   const [foto, setFoto] = useState("")
   const [equipo, setEquipo] = useState("")
+  const [titulo, setTitulo] = useState("")
+  const [destaque, setDestaque] = useState("")
 
-  const { registrarColaborador } = props
+  const { registrarColaborador, crearEquipo } = props
 
-  const envioDatos = (event) => {
-    event.preventDefault()
+  const datosColaborador = (e) => {
+    e.preventDefault()
 
-    let datosCard = {
+    let cardColaborador = {
       nombre,
       puesto,
       foto,
       equipo
     }
-    registrarColaborador(datosCard)
-    console.log(datosCard)
+    registrarColaborador(cardColaborador)
+  }
+
+  const datosEquipo = (e) => {
+    e.preventDefault()
+
+    let cardEquipo = {
+      titulo,
+      destaque
+    }
+    crearEquipo(cardEquipo)
   }
 
   return (
     <section className="formulario">
-      <form onSubmit={envioDatos}>
-        <h2>Rellena el formulario para crear el colaborador.</h2>
+      <form onSubmit={datosColaborador}>
+        <h2>Rellena el formulario para crear el colaborador</h2>
         <InputForm
           titulo="Nombre"
           placeholder="Ingresar nombre"
@@ -51,6 +62,25 @@ const Form = (props) => {
           required
         />
         <ListaForm valor={equipo} set={setEquipo} equipo={props.equipo} required />
+        <BotonCrear texto="Crear" />
+      </form>
+
+      <form onSubmit={datosEquipo}>
+        <h2>Rellena el formulario para crear el equipo</h2>
+        <InputForm
+          titulo="Título"
+          placeholder="Ingresar título"
+          valor={titulo}
+          set={setTitulo}
+          required
+        />
+        <InputForm
+          titulo="Color de fondo"
+          placeholder="Ingresar color de fondo"
+          valor={destaque}
+          set={setDestaque}
+          required
+        />
         <BotonCrear texto="Crear" />
       </form>
     </section>

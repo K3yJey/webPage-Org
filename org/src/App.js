@@ -9,7 +9,7 @@ import Footer from "./components/Footer/Footer.jsx"
 
 function App() {
   const [mostrarForm, ocultarForm] = useState(false)
-  const [colaboradores, actualizarColab] = useState([
+  const [colaborador, actualizarColab] = useState([
     {
       id: uuid(),
       equipo: "Front End",
@@ -75,16 +75,17 @@ function App() {
   }
 
   //Registrar colaborador
-  const registrarColaborador = (colaborador) => {
-    console.log("Nuevo colaborador", colaborador)
-
+  const registrarColaborador = (colaboradores) => {
     //Spread operator -> Copia el arreglo
-    actualizarColab([...colaboradores, colaborador])
+    actualizarColab([...colaborador, colaboradores])
   }
 
   //Eliminar colaborador
-  const eliminarColaborador = () => {
-    console.log("Eliminar")
+  const eliminarColaborador = (id) => {
+    const newColaborador = colaborador.filter(
+      (colaboradores) => colaboradores.id !== id
+    )
+    actualizarColab(newColaborador)
   }
 
   //Actualizar color de equipo
@@ -99,6 +100,11 @@ function App() {
     actualizarEquipo(colorActualizar)
   }
 
+  //Crear equipo
+  const crearEquipo = (nuevoEquipo) => {
+    actualizarEquipo([...equipo, { ...nuevoEquipo, id: uuid() }])
+  }
+
   //Ternario -> condicion ? Muestra : NoMuestra
   //Cortocircuito -> condicion && Muestra
   return (
@@ -110,6 +116,7 @@ function App() {
         <Form
           equipo={equipo.map((lista) => lista.titulo)}
           registrarColaborador={registrarColaborador}
+          crearEquipo={crearEquipo}
         />
       )}
 
@@ -120,8 +127,8 @@ function App() {
           <Equipo
             key={lista.titulo}
             equipo={lista}
-            colaborador={colaboradores.filter(
-              (colaborador) => colaborador.equipo === lista.titulo
+            colaborador={colaborador.filter(
+              (colaboradores) => colaboradores.equipo === lista.titulo
               /*Filter -> Filtrar de colaborador para que solo aparezcan los
               lista.titulo que sea igual al de colaborador*/
             )}
