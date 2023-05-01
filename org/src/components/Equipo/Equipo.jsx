@@ -1,13 +1,14 @@
 import "./Equipo.css"
+import hexToRgba from "hex-to-rgba"
 import Colaborador from "./Colaborador/Colaborador.jsx"
 
 const Equipo = (props) => {
   //Destructuración
-  const { titulo, fondo, destaque } = props.equipo
+  const { titulo, fondo, destaque, id } = props.equipo
   const { colaborador, eliminarColaborador, actualizarColor } = props
 
   const bgc = {
-    backgroundColor: fondo
+    backgroundColor: hexToRgba(destaque, 0.5)
   }
 
   const color = {
@@ -26,7 +27,7 @@ const Equipo = (props) => {
             type="color"
             value={destaque}
             onChange={(evento) => {
-              actualizarColor(evento.target.value, titulo)
+              actualizarColor(evento.target.value, id)
             }}
           />
 
