@@ -5,7 +5,7 @@ import Colaborador from "./Colaborador/Colaborador.jsx"
 const Equipo = (props) => {
   //Destructuración
   const { titulo, fondo, destaque, id } = props.equipo
-  const { colaborador, eliminarColaborador, actualizarColor } = props
+  const { colaborador, eliminarColaborador, actualizarColor, like } = props
 
   const bgc = {
     backgroundColor: hexToRgba(destaque, 0.5)
@@ -40,6 +40,7 @@ const Equipo = (props) => {
                   destaque={destaque}
                   eliminarColaborador={eliminarColaborador}
                   actualizarColor={actualizarColor}
+                  like={like}
                 />
               )
             })}

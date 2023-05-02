@@ -8,21 +8,23 @@ import Equipo from "./components/Equipo/Equipo.jsx"
 import Footer from "./components/Footer/Footer.jsx"
 
 function App() {
-  const [mostrarForm, ocultarForm] = useState(true)
-  const [colaborador, actualizarColab] = useState([
+  const [mostrarForm, ocultarForm] = useState(false)
+  const [colaborador, actualizarColaborador] = useState([
     {
       id: uuid(),
       equipo: "Front End",
       foto: "https://github.com/K3yJey.png",
       nombre: "Kevin Madrid",
-      puesto: "Developer"
+      puesto: "Developer",
+      fav: true
     },
     {
       id: uuid(),
       equipo: "Programación",
       foto: "https://github.com/lpachecob.png",
       nombre: "Luis Pacheco",
-      puesto: "Developer"
+      puesto: "Developer",
+      fav: false
     }
   ])
   const [equipo, actualizarEquipo] = useState([
@@ -30,7 +32,8 @@ function App() {
       id: uuid(),
       titulo: "Programación",
       fondo: "#d9f7e9",
-      destaque: "#57c278"
+      destaque: "#57c278",
+      fav: ""
     },
     {
       id: uuid(),
@@ -77,7 +80,7 @@ function App() {
   //Registrar colaborador
   const registrarColaborador = (colaboradores) => {
     //Spread operator -> Copia el arreglo
-    actualizarColab([...colaborador, colaboradores])
+    actualizarColaborador([...colaborador, colaboradores])
   }
 
   //Eliminar colaborador
@@ -85,12 +88,11 @@ function App() {
     const newColaborador = colaborador.filter(
       (colaboradores) => colaboradores.id !== id
     )
-    actualizarColab(newColaborador)
+    actualizarColaborador(newColaborador)
   }
 
   //Actualizar color de equipo
   const actualizarColor = (color, id) => {
-    console.log("Actualizar: ", color, id)
     const colorActualizar = equipo.map((equipo) => {
       if (equipo.id === id) {
         equipo.destaque = color
@@ -103,6 +105,16 @@ function App() {
   //Crear equipo
   const crearEquipo = (nuevoEquipo) => {
     actualizarEquipo([...equipo, { ...nuevoEquipo, id: uuid() }])
+  }
+
+  const like = (id) => {
+    const likeColaborador = colaborador.map((colaborador) => {
+      if (colaborador.id === id) {
+        colaborador.fav = !colaborador.fav
+      }
+      return colaborador
+    })
+    actualizarColaborador(likeColaborador)
   }
 
   //Ternario -> condicion ? Muestra : NoMuestra
@@ -134,6 +146,7 @@ function App() {
             )}
             eliminarColaborador={eliminarColaborador}
             actualizarColor={actualizarColor}
+            like={like}
           />
         )
       })}
