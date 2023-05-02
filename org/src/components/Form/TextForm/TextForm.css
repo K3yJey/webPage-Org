@@ -1,9 +1,9 @@
-.card-form {
+.card {
   font-family: var(--texto-montserrat);
   margin: 24px 0px;
 }
 
-.card-form label {
+.card label {
   font-family: var(--montserrat);
   font-size: 18px;
   font-weight: 600;
@@ -11,16 +11,21 @@
   display: block;
 }
 
-.card-form input {
+.card input {
   font-family: var(--montserrat);
   font-size: 16px;
   font-weight: 700;
   background-color: var(--color-blanco);
   width: 100%;
-  box-shadow: 10px 10px 30px  rgb(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 30px rgb(0, 0, 0, 0.1);
   border: none;
   padding: 30px 20px;
   outline-color: var(--color-azul);
   margin: 8px 0px;
   box-sizing: border-box;
+}
+
+.card-color input {
+  height: 40px;
+  padding: 5px 20px;
 }

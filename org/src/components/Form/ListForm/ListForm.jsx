@@ -1,6 +1,6 @@
-import "./ListaForm.css"
+import "./ListForm.css"
 
-const ListaForm = (props) => {
+const ListForm = (props) => {
   const cambio = (event) => {
     props.set(event.target.value)
   }
@@ -22,4 +22,4 @@ const ListaForm = (props) => {
   )
 }
 
-export default ListaForm
+export default ListForm

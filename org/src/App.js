@@ -8,7 +8,7 @@ import Equipo from "./components/Equipo/Equipo.jsx"
 import Footer from "./components/Footer/Footer.jsx"
 
 function App() {
-  const [mostrarForm, ocultarForm] = useState(false)
+  const [mostrarForm, ocultarForm] = useState(true)
   const [colaborador, actualizarColab] = useState([
     {
       id: uuid(),
