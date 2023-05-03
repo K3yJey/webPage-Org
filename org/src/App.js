@@ -107,6 +107,7 @@ function App() {
     actualizarEquipo([...equipo, { ...nuevoEquipo, id: uuid() }])
   }
 
+  //Colaborador favorito
   const like = (id) => {
     const likeColaborador = colaborador.map((colaborador) => {
       if (colaborador.id === id) {
