@@ -1,8 +1,8 @@
 import { useState } from "react"
 import "./Form.css"
-import TextForm from "./TextForm/TextForm.jsx"
-import ListForm from "./ListForm/ListForm.jsx"
-import BotonCrear from "./BotonCrear/BotonCrear.jsx"
+import TextForm from "./TextForm/TextForm.js"
+import ListForm from "./ListForm/ListForm.js"
+import BotonCrear from "./BotonCrear/BotonCrear.js"
 
 const Form = (props) => {
   const [nombre, setNombre] = useState("")

@@ -1,11 +1,11 @@
 import { useState } from "react"
 import { v4 as uuid } from "uuid"
 import "./App.css"
-import Header from "./components/Header/Header.jsx"
-import Form from "./components/Form/Form.jsx"
-import Org from "./components/Org/Org.jsx"
-import Equipo from "./components/Equipo/Equipo.jsx"
-import Footer from "./components/Footer/Footer.jsx"
+import Header from "./components/Header/Header.js"
+import Form from "./components/Form/Form.js"
+import Org from "./components/Org/Org.js"
+import Equipo from "./components/Equipo/Equipo.js"
+import Footer from "./components/Footer/Footer.js"
 
 function App() {
   const [mostrarForm, ocultarForm] = useState(false)
