@@ -1,6 +1,6 @@
 import "./Equipo.css"
 import hexToRgba from "hex-to-rgba"
-import Colaborador from "./Colaborador/Colaborador.jsx"
+import Colaborador from "./Colaborador/Colaborador.js"
 
 const Equipo = (props) => {
   //Destructuración
