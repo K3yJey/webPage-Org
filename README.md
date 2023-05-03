@@ -18,7 +18,7 @@ Proyecto en progreso.
 * Carpeta 
 * Carpeta 
 
-## ⚙️ Comandos necesarios
+## ⚙️ Comandos necesarios para la creación de la app React
 ``` console 
 npx create-react-app [nombre de la app]
 ``` 
@@ -47,6 +47,25 @@ Ctrl + C
 <br/>
 
 **IMPORTANTE: Mantener la terminal corriendo para la correcta ejecución de la app.**
+
+## ⚙️ Comandos necesarios para el deploy de la app React
+``` console
+npm run build
+``` 
+↑ Optimiza el código y crea la carpeta build para el deploy.
+
+``` console
+npm install -g serve
+``` 
+↑ Installa el serve para crear un servidor estático.
+
+``` console
+serve -s build 
+``` 
+↑ Ejecuta el servidor.
+
+## ▶️ Deploy de app
+* Vercel => [Org Page](https://org-k3yjey.vercel.app/)
 
 ## 🎨 Diseño en Figma
 * Figma => [Clic aquí](https://www.figma.com/file/70l45ssEH6qBo9IYDe2nxe/Intro-a-React?node-id=134%3A128&t=7I0a4d3jWOfv6dHU-1)
