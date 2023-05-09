@@ -3,7 +3,7 @@
 ## 📦 Sobre el repositorio
 Primer proyecto de la librería React, en el cual desarrollamos un app estilo orgnización en la cual podremos controlar los colaboradores de nuestra Organización.
 
-## ✔️ [El respositorio aquí](https://github.com/K3yJey/javascript-CRUD_JSAsincrono.git)
+## ✔️ [El respositorio aquí](https://github.com/K3yJey/org.git)
 
 ## 🔧 Tecnologías utilizadas
 * ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -12,11 +12,7 @@ Primer proyecto de la librería React, en el cual desarrollamos un app estilo or
 * ![React](https://img.shields.io/badge/React-100000?style=for-the-badge&logo=React&logoColor=00dafc&labelColor=222222&color=222222)
 
 ## 📌 Comentarios adicionales 
-Proyecto en progreso.
-
-## 📂 División/Organización de la carpeta
-* Carpeta 
-* Carpeta 
+Proyecto en culminado, web app sin responsive design.
 
 ## ⚙️ Comandos necesarios para la creación de la app React
 ``` console 
