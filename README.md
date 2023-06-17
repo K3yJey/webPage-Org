@@ -1,7 +1,7 @@
 # React - Desarrollando con JavaScript
 
 ## 📦 Sobre el repositorio
-Primer proyecto de la librería React, en el cual desarrollamos un app estilo orgnización en la cual podremos controlar los colaboradores de nuestra Organización.
+Primer proyecto React, en el cual desarrollamos un app estilo orgnización en la cual podremos controlar los colaboradores de nuestra Organización.
 
 ## ✔️ [El respositorio aquí](https://github.com/K3yJey/org.git)
 
@@ -12,7 +12,7 @@ Primer proyecto de la librería React, en el cual desarrollamos un app estilo or
 * ![React](https://img.shields.io/badge/React-100000?style=for-the-badge&logo=React&logoColor=00dafc&labelColor=222222&color=222222)
 
 ## 📌 Comentarios adicionales 
-Proyecto en culminado, web app sin responsive design.
+Proyecto en culminado.
 
 ## ⚙️ Comandos necesarios para la creación de la app React
 ``` console 
