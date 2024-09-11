@@ -23,7 +23,7 @@ const Colaborador = (props) => {
         <h4 style={{ color: "var(--color-azul)" }}>{nombre}</h4>
         <h5>{puesto}</h5>
 
-        {fav == true ? (
+        {fav === true ? (
           <AiFillHeart color="red" onClick={() => like(id)} />
         ) : (
           <AiOutlineHeart onClick={() => like(id)} />

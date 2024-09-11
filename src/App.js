@@ -9,6 +9,7 @@ import Footer from "./components/Footer/Footer.js"
 
 function App() {
   const [mostrarForm, ocultarForm] = useState(false)
+  
   const [colaborador, actualizarColaborador] = useState([
     {
       id: uuid(),
@@ -27,6 +28,7 @@ function App() {
       fav: false
     }
   ])
+
   const [equipo, actualizarEquipo] = useState([
     {
       id: uuid(),

@@ -40,6 +40,7 @@ const Form = (props) => {
     <section className="formulario">
       <form onSubmit={datosColaborador}>
         <h2>Rellena el formulario para crear el colaborador</h2>
+
         <TextForm
           titulo="Nombre"
           placeholder="Ingresar nombre"
@@ -47,6 +48,7 @@ const Form = (props) => {
           set={setNombre}
           required
         />
+
         <TextForm
           titulo="Puesto"
           placeholder="Ingresar puesto"
@@ -54,6 +56,7 @@ const Form = (props) => {
           set={setPuesto}
           required
         />
+
         <TextForm
           titulo="Foto"
           placeholder="Ingresar enlace de foto"
@@ -61,12 +64,15 @@ const Form = (props) => {
           set={setFoto}
           required
         />
+
         <ListForm valor={equipo} set={setEquipo} equipo={props.equipo} required />
+
         <BotonCrear texto="Crear" />
       </form>
 
       <form onSubmit={datosEquipo}>
         <h2>Rellena el formulario para crear el equipo</h2>
+
         <TextForm
           titulo="Título"
           placeholder="Ingresar título"
@@ -74,6 +80,7 @@ const Form = (props) => {
           set={setTitulo}
           required
         />
+
         <TextForm
           type="color"
           titulo="Color de fondo"
@@ -82,6 +89,7 @@ const Form = (props) => {
           set={setDestaque}
           required
         />
+
         <BotonCrear texto="Crear equipo" />
       </form>
     </section>

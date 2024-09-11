@@ -18,7 +18,7 @@ const Footer = () => {
       </div>
 
       <img src="/img/Logo.png" alt="org" className="img-logo" />
-      <strong>Desarrollado por K3yJey</strong>
+      <strong>Desarrollado por Kevin Madrid</strong>
     </footer>
   )
 }

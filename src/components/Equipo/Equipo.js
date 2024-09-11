@@ -4,7 +4,7 @@ import Colaborador from "./Colaborador/Colaborador.js"
 
 const Equipo = (props) => {
   //Destructuración
-  const { titulo, fondo, destaque, id } = props.equipo
+  const { titulo, destaque, id } = props.equipo
   const { colaborador, eliminarColaborador, actualizarColor, like } = props
 
   const bgc = {
