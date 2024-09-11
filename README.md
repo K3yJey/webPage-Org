@@ -33,7 +33,7 @@ npm i tar
 
 ### App deploy
 
-[Org Manager in Vercel](https://org-k3yjey.vercel.app/)
+[Org Manager in Vercel](https://organization-manager-kevinmadrid-dev-projects.vercel.app/)
 
 ### Figma app layout
 
